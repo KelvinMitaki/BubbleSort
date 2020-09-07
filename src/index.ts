@@ -1,5 +1,7 @@
 import { Sorter } from "./Sorter";
+import { NumbersCollection } from "./NumbersCollection";
 
-const sorter = new Sorter([9, 24, 5, 456, -1, 2, 3, 4, 342, 3121]);
+const numbersCollection = new NumbersCollection([4, 342, 3121]);
+const sorter = new Sorter(numbersCollection);
 sorter.sort();
-console.log(sorter.collection);
+console.log(numbersCollection.data);
